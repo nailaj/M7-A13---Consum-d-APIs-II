@@ -2,9 +2,9 @@
 $url = 'https://api101.up.railway.app/joke';
 
 $data = array(
-    'author' => $_REQUEST['author'],
-    'joke' => $_REQUEST['joke'],
-    'source' => $_REQUEST['source']
+    'author' => $_POST['author'],
+    'joke' => $_POST['joke'],
+    'source' => $_POST['source']
 );
 $ch = curl_init($url);
 
